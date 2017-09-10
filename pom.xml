@@ -22,7 +22,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-	</properties>
+        <axon.version>3.0.6</axon.version>
+    </properties>
 
 	<dependencies>
 		<dependency>
@@ -50,14 +51,19 @@
         <dependency>
             <groupId>org.axonframework</groupId>
             <artifactId>axon-spring-boot-starter</artifactId>
-            <version>3.0.6</version>
+            <version>${axon.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
             <version>2.9.0</version>
         </dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.axonframework</groupId>
+            <artifactId>axon-amqp</artifactId>
+            <version>${axon.version}</version>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
